@@ -38,14 +38,14 @@ public class MyApp extends SimpleMDDApplication {
 
     @Action(value = "Proyectos", order = 4)
     @Private
-    public AbstractAction misProyectos() {
-        return new MDDOpenCRUDAction(Proyecto.class);
+    public Class misProyectos() {
+        return Proyecto.class;
     }
 
     @Action(order = 5)
     @Private
-    public AbstractAction suscriptores() {
-        return new MDDOpenCRUDAction(Suscriptor.class);
+    public Class suscriptores() {
+        return Suscriptor.class;
     }
 
 }
