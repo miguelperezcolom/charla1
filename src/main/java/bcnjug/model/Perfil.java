@@ -8,7 +8,6 @@ import lombok.Getter;
 @Getter
 public class Perfil {
 
-    @SameLine
     private Image foto =
             new Image("",
                     new ExternalResource(
